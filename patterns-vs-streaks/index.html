@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterns vs Streaks (2026): forgiving streak vs pay-once simplicity</title>
+<meta name="description" content="Patterns vs Streaks compared for 2026: price, platforms, and the key difference — Streaks resets on one missed day, Patterns forgives the first miss. Which habit tracker fits you.">
+<link rel="canonical" href="https://tinyhabitlog.blog/patterns-vs-streaks/">
+<meta property="og:title" content="Patterns vs Streaks (2026): forgiving streak vs pay-once simplicity">
+<meta property="og:description" content="Patterns vs Streaks compared for 2026: price, platforms, and the key difference — Streaks resets on one missed day, Patterns forgives the first miss. Which habit tracker fits you.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tiny Habit Log">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='6' fill='%232f5d4f'/%3E%3Crect x='7' y='7' width='6' height='6' rx='1.5' fill='%23f7f3ea'/%3E%3Crect x='17' y='7' width='6' height='6' rx='1.5' fill='%23c8922a'/%3E%3Crect x='7' y='17' width='6' height='6' rx='1.5' fill='%23c05f3c'/%3E%3Crect x='17' y='17' width='6' height='6' rx='1.5' fill='%23f7f3ea'/%3E%3C/svg%3E">
+<style>
+:root{--paper:#f7f3ea;--ink:#241f1a;--muted:#6b6157;--line:#e0d7c6;--forest:#2f5d4f;--forest-2:#3f7a67;--terra:#c05f3c;--terra-soft:#f3e2d8;--gold:#c8922a;--card:#fffdf8;--good:#e6efe6;--good-t:#2f5d4f;--bad:#f6e4dc;--bad-t:#a8451f;--maxw:74ch;}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-size:19px;line-height:1.62;}
+.mono{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:.72em;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);font-weight:700}
+a{color:var(--forest);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+a:hover{color:var(--terra)}
+header.site{border-bottom:2px solid var(--ink);background:var(--paper)}
+.bar{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700}
+.brand svg{display:block}
+.brand .bt b{font-size:20px;letter-spacing:-.01em;display:block;line-height:1.1}
+.brand .bt small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;font-family:ui-monospace,monospace}
+nav.top{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap;font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.02em;text-transform:uppercase}
+nav.top a{color:var(--muted);text-decoration:none;font-weight:600}
+nav.top a:hover{color:var(--terra)}
+main{max-width:960px;margin:0 auto;padding:0 20px}
+.wrap{max-width:var(--maxw)}
+.crumb{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);margin:22px 0 6px;letter-spacing:.04em}
+.crumb a{color:var(--muted)}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.1;letter-spacing:-.02em;margin:.2em 0 .35em}
+h2{font-size:clamp(23px,3.4vw,30px);line-height:1.18;letter-spacing:-.01em;margin:1.7em 0 .5em;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:20px;margin:1.4em 0 .3em}
+p{margin:.7em 0}
+.updated{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);letter-spacing:.03em;margin:0 0 6px;text-transform:uppercase}
+.answer{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--forest);border-radius:0 8px 8px 0;padding:16px 20px;margin:20px 0;font-size:19.5px}
+.answer p:first-child{margin-top:0}.answer p:last-child{margin-bottom:0}
+.callout{background:var(--terra-soft);border:1px solid #e6c9b9;border-radius:8px;padding:14px 18px;margin:20px 0;font-size:17px}
+.disclosure{background:#f0ece0;border:1px dashed #c3b89f;border-radius:8px;padding:12px 16px;margin:24px 0;font-size:15.5px;color:var(--muted)}
+.tablewrap{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:15.5px;background:var(--card);min-width:640px}
+caption{caption-side:top;text-align:left;font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding:12px 14px 6px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:#efe8d8;font-family:ui-monospace,monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);border-bottom:2px solid var(--ink)}
+tbody tr:last-child td{border-bottom:none}
+td.good{background:var(--good);color:var(--good-t);font-weight:600}
+td.bad{background:var(--bad);color:var(--bad-t)}
+.pick{font-weight:700;color:var(--terra)}
+ul,ol{margin:.7em 0;padding-left:1.3em}li{margin:.35em 0}
+blockquote{margin:1.2em 0;padding:2px 18px;border-left:3px solid var(--gold);color:var(--muted);font-style:italic}
+.stat{display:flex;gap:14px;align-items:baseline;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:16px 0}
+.stat b{font-family:ui-monospace,monospace;font-size:28px;color:var(--forest);line-height:1;white-space:nowrap}
+.stat span{font-size:15.5px;color:var(--muted)}
+.faq{margin:14px 0}
+.faq details{border:1px solid var(--line);border-radius:8px;background:var(--card);margin:8px 0;padding:2px 16px}
+.faq summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none;font-size:17.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";color:var(--terra);font-family:ui-monospace,monospace;margin-right:10px;font-weight:700}
+.faq details[open] summary::before{content:"\2013"}
+.faq details p{margin:0 0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:22px 0}
+.card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:16px 18px}
+.card a{text-decoration:none}
+.card h3{margin:.1em 0 .2em;font-size:18px}
+.card p{margin:.2em 0 0;font-size:15px;color:var(--muted)}
+.sources{font-size:14.5px;color:var(--muted)}
+.sources h2{font-size:20px}.sources li{margin:.5em 0}
+footer.site{border-top:2px solid var(--ink);margin-top:60px;background:#efe8d8}
+.foot{max-width:960px;margin:0 auto;padding:26px 20px 40px;font-size:14px;color:var(--muted)}
+.foot .cols{display:flex;flex-wrap:wrap;gap:8px 22px;margin:10px 0 18px}
+.foot a{color:var(--forest);text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.publisher{border-top:1px solid var(--line);padding-top:14px;font-size:13px;line-height:1.5}
+@media (max-width:560px){body{font-size:17.5px}nav.top{width:100%;margin-left:0;gap:12px}}
+@media (prefers-color-scheme:dark){:root{--paper:#1a1713;--ink:#ece4d6;--muted:#a89c8a;--line:#3a332a;--card:#221d18;--terra-soft:#33241c;--good:#22302a;--good-t:#8fc7ac;--bad:#3a251d;--bad-t:#e0a184;--forest:#7fb59f;--forest-2:#6ba48c;}thead th{background:#2b251d;color:var(--ink)}caption{color:var(--muted)}.disclosure{background:#221d18;border-color:#4a4232}footer.site{background:#161310}}
+:root[data-theme=dark]{--paper:#1a1713;--ink:#ece4d6;--muted:#a89c8a;--line:#3a332a;--card:#221d18;--terra-soft:#33241c;--good:#22302a;--good-t:#8fc7ac;--bad:#3a251d;--bad-t:#e0a184;--forest:#7fb59f;--forest-2:#6ba48c;}
+:root[data-theme=dark] thead th{background:#2b251d;color:var(--ink)}
+:root[data-theme=dark] footer.site{background:#161310}
+:root[data-theme=dark] .disclosure{background:#221d18;border-color:#4a4232}
+:root[data-theme=light]{--paper:#f7f3ea;--ink:#241f1a;--muted:#6b6157;--line:#e0d7c6;--card:#fffdf8;--forest:#2f5d4f;}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tinyhabitlog.blog/"}, {"@type": "ListItem", "position": 2, "name": "Patterns vs Streaks", "item": "https://tinyhabitlog.blog/patterns-vs-streaks/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Patterns vs Streaks (2026): forgiving streak vs pay-once simplicity", "description": "Patterns vs Streaks compared for 2026: price, platforms, and the key difference — Streaks resets on one missed day, Patterns forgives the first miss. Which habit tracker fits you.", "datePublished": "2026-08-05", "dateModified": "2026-08-05", "author": {"@type": "Organization", "name": "Tiny Habit Log"}, "publisher": {"@type": "Organization", "name": "Opsibyte", "url": "https://opsibyte.com"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tinyhabitlog.blog/patterns-vs-streaks/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Patterns or Streaks cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "Streaks is far cheaper: a one-time $5.99 purchase versus Patterns' subscription of $49.99/year or $9.99/month. Over multiple years the difference is substantial. Patterns' cost buys a forgiving-streak design and if-then habit planning, not just a tracker."}}, {"@type": "Question", "name": "Does Streaks break your streak if you miss one day?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Streaks uses a classic streak that resets after a single missed day. Patterns is designed so the streak only breaks after two consecutive missed days, implementing the 'never miss twice' rule. You can replicate that discipline manually in Streaks."}}, {"@type": "Question", "name": "Do Patterns and Streaks work on Android?", "acceptedAnswer": {"@type": "Answer", "text": "No. Both are Apple-only. Streaks runs on iPhone, iPad, Apple Watch, Mac and Vision Pro; Patterns runs on iPhone and iPad. Android users should look at Loop (free) or Habitify instead."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="bar">
+<a class="brand" href="/"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="28" rx="6" fill="#2f5d4f"/><rect x="6" y="6" width="5" height="5" rx="1.4" fill="#f7f3ea"/><rect x="12.5" y="6" width="5" height="5" rx="1.4" fill="#f7f3ea"/><rect x="19" y="6" width="5" height="5" rx="1.4" fill="#c8922a"/><rect x="6" y="12.5" width="5" height="5" rx="1.4" fill="#f7f3ea"/><rect x="12.5" y="12.5" width="5" height="5" rx="1.4" fill="#c05f3c"/><rect x="19" y="12.5" width="5" height="5" rx="1.4" fill="#f7f3ea"/><rect x="6" y="19" width="5" height="5" rx="1.4" fill="#c8922a"/><rect x="12.5" y="19" width="5" height="5" rx="1.4" fill="#f7f3ea"/><rect x="19" y="19" width="5" height="5" rx="1.4" fill="#f7f3ea"/></svg><span class="bt"><b>Tiny Habit Log</b><small>Field notes on habits that stick</small></span></a>
+<nav class="top"><a href="/best-habit-tracker-apps-2026/">Best trackers 2026</a><a href="/how-long-to-form-a-habit/">How long to form a habit</a><a href="/do-habit-trackers-work/">Do trackers work?</a><a href="/why-habits-fail/">Why habits fail</a><a href="/faq/">FAQ</a></nav>
+</div></header>
+<main>
+<div class="wrap">
+<div class="crumb"><a href="/">Home</a> / Patterns vs Streaks</div>
+
+<p class="updated">Updated August 2026</p>
+<h1>Patterns vs Streaks: which habit tracker should you pick?</h1>
+<div class="answer">
+<p>Choose <strong>Streaks</strong> if you want a proven, one-time $5.99 purchase, deep Apple-ecosystem integration (Watch, Mac, Health), and you don't mind a streak that resets on a single missed day. Choose <a href="https://trypatterns.app" rel="nofollow sponsored">Patterns</a> if you repeatedly quit trackers after one slip and want a streak that only breaks after <strong>two</strong> consecutive misses, plus if-then habit planning &mdash; accepting that it's a subscription ($49.99/yr or $9.99/mo). Both are Apple-only. Streaks is cheaper and simpler; Patterns is more forgiving by design.</p>
+</div>
+<div class="tablewrap"><table><caption>Patterns vs Streaks &mdash; verified August 2026</caption>
+<thead><tr><th>&nbsp;</th><th>Streaks</th><th>Patterns</th></tr></thead>
+<tbody>
+<tr><td><b>Price</b></td><td class="good">$5.99 one-time</td><td>$49.99/yr or $9.99/mo (2-wk trial)</td></tr>
+<tr><td><b>Platforms</b></td><td>iPhone, iPad, Watch, Mac, Vision Pro</td><td>iPhone, iPad</td></tr>
+<tr><td><b>Streak on a missed day</b></td><td class="bad">Breaks after 1 miss</td><td class="good">Breaks after 2 misses</td></tr>
+<tr><td><b>Apple Watch app</b></td><td class="good">Yes</td><td class="bad">Not at launch</td></tr>
+<tr><td><b>If-then / implementation intentions</b></td><td>Manual</td><td class="good">Built-in</td></tr>
+<tr><td><b>Privacy</b></td><td>On-device + iCloud</td><td class="good">Private iCloud, no accounts/analytics</td></tr>
+<tr><td><b>Best for</b></td><td>Simplicity + Apple Watch, pay once</td><td>People who quit after one slip</td></tr>
+</tbody></table></div>
+<div class="disclosure"><span class="mono">Ownership note</span> — <a href="https://trypatterns.app" rel="nofollow sponsored">Patterns</a> is made by Opsibyte, which also publishes this site. We include it as one honestly-compared option, not the default answer, and its link carries <span class="mono" style="letter-spacing:.03em">rel="nofollow sponsored"</span>. If Streaks, Loop, Habitica or Habitify fit you better, we say so.</div>
+<h2>Where Streaks wins</h2>
+<p>Price and reach. A one-time $5.99 (verified on the <a href="https://apps.apple.com/us/app/streaks/id963034692">App Store</a>) against a recurring $49.99/year is not a close call on cost, and over a few years the gap is large. Streaks also has a mature Apple Watch app and runs on Mac and Vision Pro, so you can tick a habit from your wrist. If you're disciplined enough that a hard streak reset motivates rather than defeats you, Streaks is the efficient choice.</p>
+<h2>Where Patterns wins</h2>
+<p>The failure mode it targets. The <a href="/never-miss-twice/">"never miss twice"</a> rule (from James Clear) says one miss is fine &mdash; it's the second consecutive miss that starts a new habit of <em>not</em> doing it. Streaks' classic design resets to zero on the first miss, which for many people triggers the "well, I've ruined it" spiral. Patterns bakes the forgiveness in: the streak survives one off day. It also structures each habit as an <a href="https://doi.org/10.1037/0003-066X.54.7.493">implementation intention</a> ("after I brush my teeth, I will&hellip;"), a format shown to raise follow-through. If a single missed day has ended every tracker you've tried, that design is worth more than the price gap.</p>
+<h2>Bottom line</h2>
+<p>Most people who already keep streaks should just buy Streaks &mdash; it's cheaper and excellent. Reach for Patterns specifically if perfectionism is what breaks you: the forgiving streak is the whole point. You can also get 90% of the benefit for free by manually applying "never miss twice" in Streaks or any tracker.</p>
+
+<h2>Frequently asked questions</h2><div class="faq"><details><summary>Is Patterns or Streaks cheaper?</summary><p>Streaks is far cheaper: a one-time $5.99 purchase versus Patterns' subscription of $49.99/year or $9.99/month. Over multiple years the difference is substantial. Patterns' cost buys a forgiving-streak design and if-then habit planning, not just a tracker.</p></details><details><summary>Does Streaks break your streak if you miss one day?</summary><p>Yes. Streaks uses a classic streak that resets after a single missed day. Patterns is designed so the streak only breaks after two consecutive missed days, implementing the 'never miss twice' rule. You can replicate that discipline manually in Streaks.</p></details><details><summary>Do Patterns and Streaks work on Android?</summary><p>No. Both are Apple-only. Streaks runs on iPhone, iPad, Apple Watch, Mac and Vision Pro; Patterns runs on iPhone and iPad. Android users should look at Loop (free) or Habitify instead.</p></details></div>
+<div class="sources"><h2>Primary sources</h2><ul><li>Streaks &mdash; official site and App Store listing. <a href="https://streaksapp.com">streaksapp.com</a>, <a href="https://apps.apple.com/us/app/streaks/id963034692">App Store</a> (price $5.99, verified August 2026).</li><li>Gollwitzer, P. M. (1999). "Implementation intentions: Strong effects of simple plans." <em>American Psychologist</em>, 54(7), 493&ndash;503. <a href="https://doi.org/10.1037/0003-066X.54.7.493">doi:10.1037/0003-066X.54.7.493</a></li><li>James Clear, "Habit Stacking: How to Build New Habits." <a href="https://jamesclear.com/habit-stacking">jamesclear.com/habit-stacking</a></li><li>Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., &amp; Wardle, J. (2010). "How are habits formed: Modelling habit formation in the real world." <em>European Journal of Social Psychology</em>, 40(6), 998&ndash;1009. <a href="https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674">doi:10.1002/ejsp.674</a></li></ul></div>
+</div>
+</main>
+<footer class="site"><div class="foot">
+<div class="mono" style="color:var(--muted)">Tiny Habit Log — Index</div>
+<div class="cols"><a href="/best-habit-tracker-apps-2026/">Best habit trackers 2026</a><a href="/best-habit-tracker-for-beginners-2026/">Best for beginners</a><a href="/patterns-vs-streaks/">Patterns vs Streaks</a><a href="/patterns-vs-habitify/">Patterns vs Habitify</a><a href="/streaks-vs-habitify/">Streaks vs Habitify</a><a href="/alternatives/streaks/">Streaks alternatives</a><a href="/alternatives/habitica/">Habitica alternatives</a><a href="/habit-stacking/">Habit stacking</a><a href="/two-minute-rule/">The two-minute rule</a><a href="/never-miss-twice/">Never miss twice</a><a href="/why-habits-fail/">Why habits fail</a><a href="/how-long-to-form-a-habit/">How long to form a habit</a><a href="/do-habit-trackers-work/">Do habit trackers work?</a><a href="/glossary/">Glossary</a><a href="/faq/">FAQ</a><a href="/about/">About</a></div>
+<div class="publisher">
+<strong>About this site.</strong> Tiny Habit Log is an independent editorial project. We read the research and check the app pricing so you don't have to guess. Content is informational only; you are responsible for your own choices. Every statistic links to its named primary source, and we link to more third-party sources than to any product we're connected to.<br><br>
+<strong>Ownership disclosure.</strong> Tiny Habit Log is published by Opsibyte, which also makes <a href="https://trypatterns.app" rel="nofollow sponsored">Patterns</a>, one of the habit trackers compared on this site. Links to Patterns use <span class="mono" style="letter-spacing:.04em">rel="nofollow sponsored"</span> and it is compared honestly against alternatives — including ones we think beat it for your use case. No analytics or trackers run on this site.<br><br>
+<span class="mono" style="letter-spacing:.05em">Updated August 2026 &middot; tinyhabitlog.blog</span>
+</div>
+</div></footer>
+</body></html>
